@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://obsidian.local/envelope-v2.json",
+  "title": "OBSIDIAN envelope v2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["v", "d", "s", "t", "e", "n", "k", "c"],
+  "properties": {
+    "v": { "const": 1 },
+    "d": { "type": "string", "pattern": "^[0-9a-f]{8}$" },
+    "s": { "type": "integer", "minimum": 1 },
+    "t": { "type": "integer", "minimum": 1 },
+    "e": { "type": "string", "minLength": 43, "maxLength": 44 },
+    "n": { "type": "string", "minLength": 16, "maxLength": 16 },
+    "k": { "enum": ["msg", "chunk", "manifest"] },
+    "c": { "type": "string", "minLength": 1 }
+  }
+}
