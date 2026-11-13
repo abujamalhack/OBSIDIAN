@@ -1,0 +1,14 @@
+name = "obsidian-relay"
+main = "src/index.ts"
+compatibility_date = "2026-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+[[kv_namespaces]]
+binding = "Q"
+id = "REPLACE_WITH_KV_NAMESPACE_ID"
+
+[vars]
+OPERATOR_CHAT = "REPLACE_WITH_CHAT_ID"
+DEVICE_KEYS = "{}"
+DEVICE_PUB = "{}"
+MAX_BODY = "1048576"
