@@ -1,0 +1,27 @@
+# Gradle / Android
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+android/app/release/
+*.jks
+*.keystore
+*.apk
+*.aab
+
+# Node / Worker
+node_modules/
+relay/node_modules/
+relay/.wrangler/
+relay/dist/
+.dev.vars
+.env
+
+# Tooling
+__pycache__/
+*.pyc
+.idea/
+.vscode/
+.DS_Store
+*.log
+baseline.json
