@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OBSIDIAN</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>OBSIDIAN</h1>
+  <div id="status">no identity</div>
+</header>
+
+<section id="identity">
+  <button id="gen">Generate identity</button>
+  <button id="export">Export private key</button>
+  <button id="import">Import private key</button>
+  <textarea id="pubout" readonly placeholder="public key appears here"></textarea>
+</section>
+
+<section id="config">
+  <label>Relay URL <input id="relay" placeholder="https://obsidian-relay.x.workers.dev"></label>
+  <label>Operator token <input id="optoken" type="password"></label>
+  <button id="savecfg">Save</button>
+</section>
+
+<section id="sessions">
+  <button id="refresh">Refresh sessions</button>
+  <ul id="sessionlist"></ul>
+</section>
+
+<section id="console">
+  <div id="active">no active session</div>
+  <div id="log"></div>
+  <form id="sendform">
+    <input id="cmd" placeholder="/status" autocomplete="off">
+    <button>Send</button>
+  </form>
+</section>
+
+<section id="transcript">
+  <button id="pull">Pull inbox</button>
+  <button id="report">Build report</button>
+  <pre id="out"></pre>
+</section>
+
+<script src="crypto.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
